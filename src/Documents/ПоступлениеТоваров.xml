@@ -49,7 +49,7 @@
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm/>
+			<DefaultObjectForm>Document.ПоступлениеТоваров.Form.ФормаДокумента</DefaultObjectForm>
 			<DefaultListForm/>
 			<DefaultChoiceForm/>
 			<AuxiliaryObjectForm/>
@@ -158,6 +158,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
+			<Form>ФормаДокумента</Form>
 			<TabularSection uuid="f503ac9b-48e1-4178-9449-3019a468a595">
 				<InternalInfo>
 					<xr:GeneratedType name="DocumentTabularSection.ПоступлениеТоваров.Товары" category="TabularSection">
@@ -345,8 +346,64 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
+					<Attribute uuid="f4dc773e-79bd-4516-b85f-937e09b81f0a">
+						<Properties>
+							<Name>Партия</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Партия</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Партия</v8:Type>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
 				</ChildObjects>
 			</TabularSection>
+			<Template>Печать</Template>
+			<Command uuid="572e133f-56e3-4940-9ab3-54ee1e5c8f13">
+				<Properties>
+					<Name>Печать</Name>
+					<Synonym/>
+					<Comment/>
+					<Group>FormCommandBarImportant</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:DocumentRef.ПоступлениеТоваров</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Multiple</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
 		</ChildObjects>
 	</Document>
 </MetaDataObject>
