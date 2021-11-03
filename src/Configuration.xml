@@ -47,7 +47,9 @@
 				<v8:Value xsi:type="app:ApplicationUsePurpose">PlatformApplication</v8:Value>
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
-			<DefaultRoles/>
+			<DefaultRoles>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.БазовыеПрава</xr:Item>
+			</DefaultRoles>
 			<Vendor/>
 			<Version/>
 			<UpdateCatalogAddress/>
@@ -215,6 +217,18 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<Subsystem>НСИ</Subsystem>
+			<Subsystem>Закупки</Subsystem>
+			<Subsystem>Продажи</Subsystem>
+			<CommonPicture>Продажи</CommonPicture>
+			<CommonPicture>Закупки</CommonPicture>
+			<CommonPicture>НСИ</CommonPicture>
+			<Role>ВсеПрава</Role>
+			<Role>ОткрытиеВнешнихСсылок</Role>
+			<Role>БазовыеПрава</Role>
+			<Role>ОтветвенныйНСИ</Role>
+			<Role>ОтветственныйЗакупки</Role>
+			<Role>ОтветсвенныйПродажи</Role>
 			<Constant>НазваниеОрганизации</Constant>
 			<Catalog>Склады</Catalog>
 			<Catalog>Контрагенты</Catalog>
@@ -223,9 +237,7 @@
 			<Document>ПоступлениеТоваров</Document>
 			<Document>РеализацияТоваров</Document>
 			<Document>ИзменениеЦены</Document>
-			<Enum>Валюты</Enum>
 			<Enum>СостояниеТовара</Enum>
-			<DataProcessor>Обработка1</DataProcessor>
 			<InformationRegister>ЦеныТоваров</InformationRegister>
 			<AccumulationRegister>Остатки</AccumulationRegister>
 		</ChildObjects>
